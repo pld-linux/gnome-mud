@@ -11,7 +11,7 @@ URL:		http://amcl.sourceforge.net/
 BuildRequires:	GConf2-devel
 BuildRequires:	intltool >= 0.23
 BuildRequires:	libgnomeui-devel >= 2.0.0
-BuildRequires:	python-pygtk >= 1.99.13
+BuildRequires:	python-pygtk-devel >= 1.99.13
 BuildRequires:	vte-devel >= 0.10.26
 BuildRequires:	zlib-devel
 Requires(post):	GConf2
