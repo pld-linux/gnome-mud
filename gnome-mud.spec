@@ -16,7 +16,7 @@ BuildRequires:	vte-devel >= 0.10.26
 BuildRequires:	zlib-devel
 Requires(post):	GConf2
 Requires(post):	scrollkeeper
-Requires:	python-pygtk >= 1.99.13
+Requires:	python-pygtk-gtk
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -38,6 +38,8 @@ Klient muda dla GNOME.
 %install
 rm -rf $RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT%{_datadir}/%{name}
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
@@ -58,6 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS BUGS ChangeLog NEWS PLUGIN.API README ROADMAP
 %attr(755,root,root) %{_prefix}/games/*
 %{_sysconfdir}/gconf/schemas/*
+%{_datadir}/*
 %{_desktopdir}/*
 %{_mandir}/man6/*
 %{_omf_dest_dir}/%{name}
