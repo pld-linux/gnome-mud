@@ -37,7 +37,6 @@ Klient muda dla GNOME.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_datadir}/%{name}
 
 %{__make} install \
@@ -60,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS BUGS ChangeLog NEWS PLUGIN.API README ROADMAP
 %attr(755,root,root) %{_prefix}/games/*
 %{_sysconfdir}/gconf/schemas/*
-%{_datadir}/*
+%{_datadir}/%{name}
 %{_desktopdir}/*
 %{_mandir}/man6/*
 %{_omf_dest_dir}/%{name}
