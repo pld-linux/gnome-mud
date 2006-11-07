@@ -60,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_prefix}/games/*
 %{_sysconfdir}/gconf/schemas/*
 %{_datadir}/%{name}
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
 %{_mandir}/man6/*
 %{_omf_dest_dir}/%{name}
 %{_pixmapsdir}/*
