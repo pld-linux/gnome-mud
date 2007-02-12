@@ -1,5 +1,5 @@
 Summary:	GNOME mud client
-Summary(pl):	Klient muda dla GNOME
+Summary(pl.UTF-8):   Klient muda dla GNOME
 Name:		gnome-mud
 Version:	0.10.5
 Release:	1
@@ -22,7 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 GNOME mud client.
 
-%description -l pl
+%description -l pl.UTF-8
 Klient muda dla GNOME.
 
 %prep
