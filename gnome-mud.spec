@@ -1,5 +1,5 @@
 Summary:	GNOME mud client
-Summary(pl.UTF-8):   Klient muda dla GNOME
+Summary(pl.UTF-8):	Klient muda dla GNOME
 Name:		gnome-mud
 Version:	0.10.5
 Release:	1
