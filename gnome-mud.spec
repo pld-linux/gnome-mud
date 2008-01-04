@@ -1,17 +1,18 @@
 Summary:	GNOME mud client
 Summary(pl.UTF-8):	Klient muda dla GNOME
 Name:		gnome-mud
-Version:	0.10.5
+Version:	0.10.7
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/0.10/%{name}-%{version}.tar.bz2
-# Source0-md5:	4c87c002dc0c78515b42dcc6040510c7
+# Source0-md5:	1198ab9466435a5cd30f1e47bbf6f8fe
 URL:		http://amcl.sourceforge.net/
 BuildRequires:	GConf2-devel
 BuildRequires:	intltool >= 0.23
 BuildRequires:	libgnomeui-devel >= 2.0.0
 BuildRequires:	python-pygtk-devel >= 1.99.13
+BuildRequires:	scrollkeeper
 BuildRequires:	vte-devel >= 0.10.26
 BuildRequires:	zlib-devel
 Requires(post):	GConf2
